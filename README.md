@@ -56,26 +56,26 @@ This will:
 The script supports several command-line arguments:
 
 ```bash
-python download_adl.py [--slides-dir DIR] [--papers-dir DIR] [--skip-slides] [--skip-papers]
+python download_adl.py [--slides] [--papers] [--slides-dir DIR] [--papers-dir DIR]
 ```
 
 Options:
 
+- `--slides`: Download lecture slides only
+- `--papers`: Download research papers only
 - `--slides-dir DIR`: Specify custom directory for lecture slides (default: `adl-slides`)
 - `--papers-dir DIR`: Specify custom directory for research papers (default: `adl-papers`)
-- `--skip-slides`: Skip downloading lecture slides
-- `--skip-papers`: Skip downloading research papers
 
 ### Examples
 
 Download only the lecture slides:
 ```bash
-python download_adl.py --skip-papers
+python download_adl.py --slides
 ```
 
 Download only the research papers:
 ```bash
-python download_adl.py --skip-slides
+python download_adl.py --papers
 ```
 
 Use custom directories:
